@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import DSAList from "./components/DSAList";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="flex flex-col justify-center items-center mt-4">
+        <h1 className="text-emerald-500 font-bold text-3xl">GeeksforGeeks</h1>
+        <h3
+          className="bg-clip-text text-transparent bg-gradient-to-r 
+							from-purple-500 to-pink-500 font-bold text-xl mb-4"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          DSA Tracker
+        </h3>
+        <DSAList />
+      </div>
+    </>
   );
 }
-
-export default App;
